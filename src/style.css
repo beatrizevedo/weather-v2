@@ -1,0 +1,31 @@
+body {
+  background-color: #bccee6;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.weather-information {
+  background: #b4c6dd;
+  max-width: 600px;
+  margin: 10px auto 40px;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+a {
+  color: white;
+  font-weight: 500;
+}
+
+form {
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
