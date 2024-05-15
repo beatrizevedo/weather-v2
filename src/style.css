@@ -4,13 +4,13 @@ body {
 }
 .weather-information {
   background: #abbdd5;
-  max-width: 600px;
+  max-width: 550px;
   margin: 10px auto 40px;
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   text-align: center;
   color: white;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .search-form-input {
   border-radius: 10px;
@@ -34,9 +34,6 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   font-weight: 250;
   cursor: pointer;
-
-  .search-form-submit .hover {
-  }
 }
 h1 {
   font-size: 50px;
@@ -54,10 +51,13 @@ h1 {
   font-weight: 300;
   margin-bottom: 0px;
 }
-.specific-weather-conditions {
+.weather-conditions {
   font-size: 15px;
   font-weight: 200;
   line-height: 2;
+}
+.specific-weather-conditions {
+  font-weight: 400;
 }
 footer {
   text-align: center;

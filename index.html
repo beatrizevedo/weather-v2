@@ -14,11 +14,12 @@
   </head>
   <body>
     <header>
-      <form class="seach-form">
+      <form class="seach-form" id="search-form">
         <input
           type="search"
           placeholder="Enter your city"
           required
+          id="input-search-form"
           class="search-form-input"
         />
         <input type="submit" value="Search" class="search-form-submit" />
@@ -26,12 +27,13 @@
     </header>
     <div class="weather-information">
       <main>
-        <h1>Toronto</h1>
+        <h1 id="weather-city">Toronto</h1>
         <p class="current-hour">21:15</p>
-        <p class="current-temperature">13°C</p>
-        <p class="specific-weather-conditions">
+        <p class="current-temperature">🌦 13°C</p>
+        <p class="weather-conditions">
           Moderate rain <br />
-          Humidity: 87%, Wind: 7.2km/h
+          Humidity: <span class="specific-weather-conditions">87%</span>, Wind:
+          <span class="specific-weather-conditions">7.2km/h</span>
         </p>
       </main>
     </div>
@@ -41,5 +43,6 @@
       <a href="https://github.com/beatrizevedo/weather-v2">Github</a> hosted on
       <a href="https://beatriz-weather-app.netlify.app/">Netlify</a>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
