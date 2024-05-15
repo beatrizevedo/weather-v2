@@ -3,7 +3,7 @@ body {
   font-family: 'Lexend Deca', sans-serif;
 }
 .weather-information {
-  background: #b4c6dd;
+  background: #abbdd5;
   max-width: 600px;
   margin: 10px auto 40px;
   padding: 30px;
@@ -12,7 +12,53 @@ body {
   color: white;
   border-radius: 30px;
 }
+.search-form-input {
+  border-radius: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 200px;
+  height: 35px;
+  box-shadow: 0 100px 50px rgba(65, 50, 100, 0.08);
+  border-width: 0;
+  color: #a6a6a6;
+  padding: 0 15px;
+  font-weight: 250;
+}
+.search-form-submit {
+  border-radius: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 35px;
+  width: 80px;
+  background-color: #abbdd5;
+  border-width: 0;
+  color: white;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  font-weight: 250;
+  cursor: pointer;
 
+  .search-form-submit .hover {
+  }
+}
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.current-hour {
+  font-size: 25px;
+  font-weight: 250;
+  line-height: 0;
+}
+.current-temperature {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.specific-weather-conditions {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 2;
+}
 footer {
   text-align: center;
   color: white;

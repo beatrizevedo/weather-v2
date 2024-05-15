@@ -14,17 +14,22 @@
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter your city" required />
-        <input type="submit" value="search" />
+      <form class="seach-form">
+        <input
+          type="search"
+          placeholder="Enter your city"
+          required
+          class="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-form-submit" />
       </form>
     </header>
     <div class="weather-information">
       <main>
         <h1>Toronto</h1>
-        <p>21:15</p>
-        <p>13°C</p>
-        <p>
+        <p class="current-hour">21:15</p>
+        <p class="current-temperature">13°C</p>
+        <p class="specific-weather-conditions">
           Moderate rain <br />
           Humidity: 87%, Wind: 7.2km/h
         </p>
