@@ -18,6 +18,9 @@ function weatherInfo(response) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
+  let weatherIcon = document.querySelector('#weather-icon');
+  weatherIcon.innerHTML = `<img src=${response.data.condition.icon_url} />`;
 }
 
 function searchCity(city) {
