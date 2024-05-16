@@ -68,7 +68,10 @@ h1 {
   line-height: 2;
   padding-top: 20px;
 }
-.specific-weather-conditions {
+.specific-humidity-conditions {
+  font-weight: 400;
+}
+.specific-wind-conditions {
   font-weight: 400;
 }
 .degrees {

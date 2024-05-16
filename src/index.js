@@ -3,6 +3,21 @@ function weatherInfo(response) {
   temperature.innerHTML = Math.round(response.data.temperature.current);
   let weatherCity = document.querySelector('#weather-city');
   weatherCity.innerHTML = response.data.city;
+  let weatherDescription = document.querySelector('#weather-description');
+  weatherDescription.innerHTML = response.data.condition.description;
+  let humidity = document.querySelector('#specific-humidity-conditions');
+  humidity.innerHTML = `${response.data.temperature.humidity}%`;
+  let wind = document.querySelector('#specific-wind-conditions');
+  wind.innerHTML = `${response.data.wind.speed}km/h`;
+  let currentTime = document.querySelector('#current-time');
+  let date = new Date(response.data.time * 1000);
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  currentTime.innerHTML = `${hours}:${minutes}`;
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 }
 
 function searchCity(city) {

@@ -29,18 +29,28 @@
     <div class="weather-information">
       <main>
         <h1 id="weather-city"></h1>
-        <p class="current-hour">21:15</p>
+        <p class="current-hour" id="current-time"></p>
 
         <p>
           <span class="weather-icon" id="weather-icon">🌦 </span>
           <span class="current-temperature" id="current-temperature"></span>
           <span class="degrees" id="degrees">°C</span>
         </p>
-        <p class="weather-conditions">
-          Moderate rain <br />
-          Humidity: <span class="specific-weather-conditions">87%</span>, Wind:
-          <span class="specific-weather-conditions">7.2km/h</span>
-        </p>
+        <div class="weather-conditions">
+          <div id="weather-description"></div>
+          <div>
+            Humidity:
+            <span
+              class="specific-humidity-conditions"
+              id="specific-humidity-conditions"
+            ></span
+            >, Wind:
+            <span
+              class="specific-wind-conditions"
+              id="specific-wind-conditions"
+            ></span>
+          </div>
+        </div>
       </main>
     </div>
     <footer>
