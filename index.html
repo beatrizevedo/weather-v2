@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -27,9 +28,14 @@
     </header>
     <div class="weather-information">
       <main>
-        <h1 id="weather-city">Toronto</h1>
+        <h1 id="weather-city"></h1>
         <p class="current-hour">21:15</p>
-        <p class="current-temperature">🌦 13°C</p>
+
+        <p>
+          <span class="weather-icon" id="weather-icon">🌦 </span>
+          <span class="current-temperature" id="current-temperature"></span>
+          <span class="degrees" id="degrees">°C</span>
+        </p>
         <p class="weather-conditions">
           Moderate rain <br />
           Humidity: <span class="specific-weather-conditions">87%</span>, Wind:
