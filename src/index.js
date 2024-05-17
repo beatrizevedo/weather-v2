@@ -13,11 +13,16 @@ function weatherInfo(response) {
   let date = new Date(response.data.time * 1000);
   let minutes = date.getMinutes();
   let hours = date.getHours();
-  currentTime.innerHTML = `${hours}:${minutes}`;
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  currentTime.innerHTML = `${hours}:${minutes}`;
 
   let weatherIcon = document.querySelector('#weather-icon');
   weatherIcon.innerHTML = `<img src=${response.data.condition.icon_url} />`;
