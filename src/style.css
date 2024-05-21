@@ -11,6 +11,7 @@ body {
   text-align: center;
   color: white;
   border-radius: 20px;
+  display: flex;
 }
 .search-form-input {
   border-radius: 10px;
@@ -55,12 +56,12 @@ h1 {
   margin-top: -100px;
 }
 .weather-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 45px;
   display: flex;
-  margin-left: 190px;
-  margin-top: 30px;
+  margin-left: 175px;
+  margin-top: 35px;
 }
 
 .weather-conditions {
@@ -68,6 +69,7 @@ h1 {
   font-weight: 200;
   line-height: 2;
   padding-top: 35px;
+  padding-bottom: 10px;
 }
 .specific-humidity-conditions {
   font-weight: 400;
@@ -80,6 +82,30 @@ h1 {
   margin-left: 300px;
   margin-top: -44px;
   font-size: 20px;
+}
+.forecast {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+  padding: 40px auto;
+}
+.forecast-weather-weekday {
+  transform: rotate(-90deg);
+  font-size: 16px;
+  padding: 50px 0px 50px 00px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+.forecast-weather-icon {
+  padding: 20px 0 10px 0;
+  width: 50px;
+  height: 50px;
+}
+.forecast-weather-temperature {
+  padding-bottom: 10px;
+}
+.forecast-min-temperature {
+  font-weight: 200;
 }
 footer {
   text-align: center;
@@ -96,4 +122,9 @@ a {
 form {
   text-align: center;
   padding: 60px 0 30px 0;
+}
+hr {
+  width: 40px;
+  height: 0.5px;
+  background-color: white;
 }
